@@ -7,7 +7,21 @@
 	</head>
 	<body>
 		<h1>WakeUp Times</h1>
+		<p>
+			A sleep cycle lasts about 90 minutes, and a good night's sleep 
+			consists of 5-6 sleep cycles.
+		</p>
 		<p>If you go to bed now, when should you wake up?</p>
+		<button id="calc-btn">Calculate</button>
+
+		<script>
+			const calcBtn = document.getElementById("calc-btn");
+			calcBtn.onclick = handleClick;
+
+			function handleClick() {
+				window.alert("boo!");
+			}
+		</script>
 	</body>
 </html>
 
