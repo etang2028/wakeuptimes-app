@@ -3,8 +3,16 @@ const wakeUpHoursDiv = document.getElementById("wakeup-hours-div");
 const promptSection = document.getElementById("prompt-section");
 const imageContainer = document.getElementById("img-container");
 const resultSection = document.getElementById("result-section");
+const refreshBtn = document.getElementById("refresh-btn");
+const returnBtn = document.getElementById("return-btn");
 
-calcBtn.onclick = calcWakeUpTimes;
+calcBtn.addEventListener("click", calcWakeUpTimes);
+refreshBtn.addEventListener("click", calcWakeUpTimes);
+returnBtn.addEventListener("click", () => {
+	promptSection.classList.remove("hidden");
+	imageContainer.classList.remove("hidden");
+	resultSection.classList.add("hidden");
+});
 
 function calcWakeUpTimes() {
 	

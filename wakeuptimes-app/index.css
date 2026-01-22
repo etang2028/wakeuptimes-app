@@ -104,3 +104,12 @@ img {
 #cycle-6 {
   background: #b1ff8c;
 }
+
+.button-group {
+	display: flex;
+	justify-content: space-between;
+}
+
+#return-btn {
+	padding: 0.5rem 1rem;
+}
